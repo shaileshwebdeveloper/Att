@@ -5,6 +5,8 @@ const updateLocation = async(req, res) => {
 
     const { coordinates, datetime, status } = req.body; 
 
+    console.log(coordinates, datetime, status)
+
     const new_location = new LiveTrackingModel({
         coordinates,
         datetime,
